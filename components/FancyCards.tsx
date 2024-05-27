@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 8
     },
     card: {
-        width: 350,
+        width: 320,
         height: 360,
         borderRadius: 6,
         marginVertical: 12,
@@ -77,7 +77,8 @@ const styles = StyleSheet.create({
         flexShrink: 1
     },
     cardFooter: {
-        color: '#000000'
+        color: '#000000',
+        paddingStart:185
     }
 
 })

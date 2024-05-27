@@ -3,42 +3,67 @@ import React from 'react'
 
 export default function FlatCards() {
   return (
-    <view>
-    <view style={styles.headingText}>
-      <Text>FlatCards</Text>
-    </view>
-    <view>
-        <view style={styles.one}>
+    <View>
+     <View >
+      <Text style={styles.headingText}>FlatCards</Text>
+    </View>
+    <View style={styles.container}>
+        <View style={styles.one}>
           <Text>
               Red
           </Text>
-        </view>
-        <view style={styles.two}>
+        </View>
+        <View style={styles.two}>
           <Text>
-              Red
+              Green
           </Text>
-        </view>
-        <view style={styles.three}>
+        </View>
+        <View style={styles.three}>
           <Text>
-              Red
+              Blue
           </Text>
-        </view>
-    </view>
-    </view>
+        </View>
+    </View>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
   headingText:{
-fontSize : 24
+    fontWeight:"bold",
+ fontSize : 24,
+ padding: 8
+  },
+  container:{
+flex:1,
+flexDirection:"row",
+justifyContent:"center",
+alignItems:"center"
+
   },
   one:{
-backgroundColor:'red'
+backgroundColor:'red',
+height:100,
+width:100,
+margin: 5,
+justifyContent:"center",
+alignItems:"center"
   },
   two:{
-backgroundColor:'green'
+backgroundColor:'green',
+height:100,
+width:100,
+margin: 5,
+justifyContent:"center",
+alignItems:"center"
   },
   three:{
-backgroundColor:'blue'
+backgroundColor:'blue',
+ paddingBottom:10,
+ height:100,
+width:100,
+margin: 5,
+justifyContent:"center",
+alignItems:"center"
   }
 })
