@@ -22,7 +22,7 @@ export default function ElevatedCards() {
             <Text>more...</Text>
         </View>
         <View style={[styles.card, styles.cardElevated]}>
-            <Text>😀</Text>
+            <Text>😀😊😀</Text>
         </View>
       </ScrollView>
     </View>
